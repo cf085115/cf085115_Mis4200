@@ -6,17 +6,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace cf085115_Mis4200.Models
 {
-    public class Doctor
+    public class Client
     {
         [Key]
-        public int doctorID { get; set; }
-
-        public string college { get; set; }
+        public int patientID { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string email { get; set; }
-        public string phone{ get; set; }
-        public DateTime doctorSince { get; set; }
+        public string phone { get; set; }
+        public DateTime dob { get; set; }
+        public DateTime patientSince { get; set; }
         public ICollection<Appointment> Appointment { get; set; }
+
     }
 }
