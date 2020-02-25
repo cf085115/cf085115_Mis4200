@@ -10,9 +10,11 @@ namespace cf085115_Mis4200.Models
     {
         [Key]
         public int appointmentId { get; set; }
+        [Display(Name = "Appointment Description")]
         public string description { get; set; }
+        [Display(Name = "Appointment Date")]
         public DateTime appointmentDate { get; set; }
-        
+        [Display(Name = "Doctor ID")]
         public int doctorID { get; set; }
         public virtual Doctor Doctor { get; set; }
 
